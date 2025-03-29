@@ -1,6 +1,9 @@
 import React from 'react'
 import { Routes, Routes} from 'react-router-dom'
 import Home from './pages/Home'
+import Login from './pages/Login'
+import About from './pages/About'
+import MyAppoinment from './pages/MyAppoinment'
 
 const App = () => {
   return (
@@ -8,6 +11,13 @@ const App = () => {
       
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/doctors' element={<Doctors />} />
+        <Route path='/doctors/:speciality' element={<Doctors />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/my-profile' element={<MyProfile />} />
+        <Route path='/MyAppoinment' element={<MyAppoinment />} />
       </Routes>
     </div>
   )

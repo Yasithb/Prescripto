@@ -3,7 +3,8 @@ import {assets} from '../assests/assets'
 
 const Navbar = () => {
   return (
-    <div>
+
+    <div className='flex item-center justify-between text-sm py-4 mb-5 border-b border-b-gray-400'>
         <img src="{assets.logo}" alt="" />
         <ul>
             <Navlink>
@@ -23,6 +24,9 @@ const Navbar = () => {
                 <hr />
             </Navlink>
         </ul>
+        <div>
+            <button>Create Account</button>
+        </div>
     </div>
   )
 }

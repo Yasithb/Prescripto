@@ -9,6 +9,7 @@ import Navbar from './components/Navbar'
 
 const App = () => {
   return (
+<<<<<<< Updated upstream
     <div className='mx-4 sm:mx-[10%]'>
       <Navbar />
       <Routes>
@@ -22,6 +23,10 @@ const App = () => {
         <Route path='/MyAppoinment' element={<MyAppoinment />} />
         <Route path='/appoinment/:docId' element={<Appoinment />} />
       </Routes>
+=======
+    <div className='text-green-500'>
+      Testing Telwind
+>>>>>>> Stashed changes
     </div>
   )
 }
